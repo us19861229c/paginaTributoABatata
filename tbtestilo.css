@@ -1,0 +1,232 @@
+@font-face{
+    font-family:"CheapPotatoesBlack" ;
+    src:url(fonts/CheapPotatoesBlack.ttf) format("truetype")
+}
+@font-face{
+    font-family:"MB_PotatoesAndPeas";
+    src:url(fonts/MB_PotatoesAndPeas.ttf) format("truetype")
+}
+
+body {
+    font-family: "MB_PotatoesAndPeas";
+    background-color:#F04322;
+    margin:0;
+    font-size: 22px;
+}
+h1 {
+    font-family: "CheapPotatoesBlack" ;
+    font-size: 3.25rem;
+    margin-top: -10px;
+}
+h2 {
+    font-family: "CheapPotatoesBlack" ;
+    font-size: 2.5rem;
+}
+h3 {
+    font-family: "CheapPotatoesBlack";
+    font-size:1.5rem;
+}
+p{
+    font-size: 2rem;
+    padding: 0px 15px;
+}
+li, a {
+    text-decoration: none;
+    font-size:2rem;
+    font-weight: bold;
+    color: black;
+    list-style: none;
+}
+.naviBar {
+    display: flex;
+    justify-content: space-evenly;
+}
+.marca {
+    text-align: center;
+}
+.destaque img{
+    width:25em;
+}
+.marca-batata img{
+    margin-top: -135px;
+    width:100%;
+}
+.row {
+    display:flex;
+}
+.column {
+    float:left;
+    margin-top: 200px;
+}
+.column.c25 {
+    width: 40%; 
+    
+}
+div.quadro {
+    background-image: url("img/quadrobatata2.png");
+    background-repeat: no-repeat;
+    position: relative;
+    top: 60px;
+    left:60px;
+    
+}
+
+.column.c75 { 
+    width: 60%;
+}
+#titHist{
+    padding-top:20px;
+}
+.container {
+    background-color: rgba(250, 229, 201, 0.5);
+    width: 95%;
+}
+
+.marca-estofado {    
+    background:
+    radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+    radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+    radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+    radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+    radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+    radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+    radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+    radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+    linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+    linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+    background-color: #300;
+    background-size: 100px 100px;
+    margin-top: -220px;
+}
+
+/**/
+#batatadiv {
+    margin-left: -490px;
+    margin-top: -160px;
+
+}
+/*Boas Companhias*/
+section.quadroNegro {
+    background-color: #000000;
+    background-image: url("img/asfalt-light.png");
+    margin-top: -530px;
+    padding-top: 80px;
+
+}
+.manchete {
+    color: #FBFBF9;
+    padding-bottom: 500px;
+}
+ .column.fish {
+     margin-top: 2100px;
+     margin-left: -450px;
+
+ }
+ .column.strog {
+    margin-top: 2100px;
+    margin-left: -150px;
+}
+.column.sol {
+    margin-top: 2100px;
+    margin-left: 150px;
+}
+.column.hamb {
+    margin-top: 2100px;
+    margin-left: 450px;
+}
+.middle {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.back-content {
+    line-height: 1rem;
+}
+.card {
+    cursor: pointer;
+    width:260px;
+    height: 400px;
+}
+.front,.back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+}
+.front img {
+    height:100%;
+}
+.front {
+    transform: perspective(600px) rotateY(0deg);
+}
+.back {
+    background: #FAA20F ;
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover > .front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+/* Batata Paz e Amor*/
+#batataPaz{
+    text-align: center;
+}
+
+.paz {
+    margin-top: -200px;
+}
+#facaBatata {
+    font-size: 3rem;
+}
+.up {
+    margin-top: 250px;
+}
+/**/
+.snow1 {
+	background: url("img/neve1.png");
+	background-repeat: repeat;
+	width: 50%;
+    height: 78.3%;
+    margin-top: -50px;
+	position: absolute;
+	animation: Fall 6s infinite linear;
+}
+.snow2 {
+	background: url("img/neve2.png");
+	background-repeat: repeat;
+	width: 50%;
+	height: 78.3%;
+    position: absolute;
+    margin-top: -50px;
+	animation: Fall 8s infinite linear;
+	filter: blur(1px);
+}
+
+@keyframes Fall{
+	0%
+	{
+		background-position: -150px -100px;
+	}
+	100%
+	{
+		background-position: 0px 900px;
+	}
+}
+#ketchup{
+    background-image: url("img/ketchup.png") no-repeat;
+    outline: none;
+}
+#ketchup:hover{
+    background-image: url("img/ketchuphover.png") no-repeat;
+}
+
+/*footer*/
+.rodape{
+    background: #FBD237 ;
+}
